@@ -10,7 +10,6 @@ namespace ServerDNP.Permistence
         Task<IList<User>> GetUsers();
 
         User ValidateUser(string username, string password);
-        void SaveChanges();
         Task<User> Add(User user);
     }
     }

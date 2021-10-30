@@ -30,7 +30,6 @@ namespace ServerDNP.Controllers
         }
 
         
-
         [HttpDelete]
         [Route("{id:int}")]
         public async Task<ActionResult> RemoveAdult([FromRoute] int id)

@@ -25,8 +25,8 @@ namespace ServerDNP.Permistence
         public User ValidateUser(string username, string password)
         {
             User first = Users.FirstOrDefault(x => x.Username.Equals(username));
-            /*if (first == null) throw new Exception("User not found");
-            if (!first.Password.Equals(password)) throw new Exception("Invalid password");*/
+            if (first == null) throw new Exception("User not found");
+            if (!first.Password.Equals(password)) throw new Exception("Invalid password");
             if (first != null) throw new Exception("User already exists");
             return first;
         }
