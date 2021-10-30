@@ -1,0 +1,16 @@
+[
+  {
+    "Username": "Peter",
+    "City": "Bratislava",
+    "Sex": "M",
+    "Password": "1111",
+    "IsRegistered": true
+  },
+  {
+    "Username": "Amy",
+    "City": "Prague",
+    "Sex": "F",
+    "Password": "0000",
+    "IsRegistered": true
+  }
+]
