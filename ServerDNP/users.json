@@ -12,5 +12,12 @@
     "Sex": "F",
     "Password": "0000",
     "IsRegistered": true
+  },
+  {
+    "Username": "aa",
+    "City": "aa",
+    "Sex": "M",
+    "Password": "aa",
+    "IsRegistered": true
   }
 ]

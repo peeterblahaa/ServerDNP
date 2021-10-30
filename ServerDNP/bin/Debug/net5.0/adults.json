@@ -208,20 +208,5 @@
     "Weight": 70,
     "Height": 190,
     "Sex": "M"
-  },
-  {
-    "JobTitle": {
-      "JobTitle": "string",
-      "Salary": 0
-    },
-    "Id": 16,
-    "FirstName": "Kaa",
-    "LastName": "string",
-    "HairColor": "string",
-    "EyeColor": "string",
-    "Age": 0,
-    "Weight": 0,
-    "Height": 0,
-    "Sex": "string"
   }
 ]
