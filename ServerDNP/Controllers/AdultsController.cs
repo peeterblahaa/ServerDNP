@@ -55,20 +55,6 @@ namespace ServerDNP.Controllers
                 return StatusCode(500, e.Message);
             }
         }
-
-        [HttpPatch]
-        [Route("{id:int}")]
-        public async Task<ActionResult> UpdateAdult([FromBody] Adult adult)
-        {
-            try
-            {
-                await adultData.UpdateAdult(adult);
-                return Ok();
-            }
-            catch (Exception e)
-            {
-                return StatusCode(500, e.Message);
-            }
-        }
+        
     }
 }

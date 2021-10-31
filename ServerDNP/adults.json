@@ -193,20 +193,5 @@
     "Weight": 81.8,
     "Height": 172,
     "Sex": "M"
-  },
-  {
-    "JobTitle": {
-      "JobTitle": "Teacher",
-      "Salary": 12000
-    },
-    "Id": 15,
-    "FirstName": "Peter",
-    "LastName": "Blasko",
-    "HairColor": "Black",
-    "EyeColor": "Blue",
-    "Age": 22,
-    "Weight": 70,
-    "Height": 190,
-    "Sex": "M"
   }
 ]

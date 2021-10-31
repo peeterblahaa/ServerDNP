@@ -39,23 +39,8 @@ namespace ServerDNP.Permistence
             fileContext.SaveChanges();
         }
 
-        public async Task UpdateAdult(Adult adult)
-        {
-            await Task.Run(() =>
-            {
-                Adult toUpdate = fileContext.Adults.First(a => a.Id == adult.Id);
-                toUpdate.FirstName = adult.FirstName;
-                toUpdate.LastName = adult.LastName;
-                toUpdate.HairColor = adult.HairColor;
-                toUpdate.EyeColor = adult.EyeColor;
-                toUpdate.Age = adult.Age;
-                toUpdate.Height = adult.Height;
-                toUpdate.Weight = adult.Weight;
-                toUpdate.Sex = adult.Sex;
-                toUpdate.JobTitle = adult.JobTitle;
-                fileContext.SaveChanges();
-            });
-        }
+        
+        
 
         public Adult Get(int id)
         {

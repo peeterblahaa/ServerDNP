@@ -11,7 +11,6 @@ namespace ServerDNP.Permistence
         Task<Adult> Add(Adult adult);
         
         Task<IList<Adult>> GetAdults();
-        Task UpdateAdult(Adult adult);
 
         Adult Get(int id);
     }
