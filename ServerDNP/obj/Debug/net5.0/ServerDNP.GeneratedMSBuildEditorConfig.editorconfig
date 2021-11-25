@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = ServerDNP
-build_property.ProjectDir = /Users/peterblasko/RiderProjects/ServerDNP/ServerDNP/
+build_property.ProjectDir = /Users/peter/RiderProjects/ServerDNP/ServerDNP/

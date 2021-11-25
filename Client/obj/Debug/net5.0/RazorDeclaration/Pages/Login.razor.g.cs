@@ -13,84 +13,84 @@ namespace LoginComponent
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "/Users/peterblasko/RiderProjects/ServerDNP/Client/_Imports.razor"
+#line 1 "/Users/peter/RiderProjects/ServerDNP/Client/_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "/Users/peterblasko/RiderProjects/ServerDNP/Client/_Imports.razor"
+#line 2 "/Users/peter/RiderProjects/ServerDNP/Client/_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "/Users/peterblasko/RiderProjects/ServerDNP/Client/_Imports.razor"
+#line 3 "/Users/peter/RiderProjects/ServerDNP/Client/_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "/Users/peterblasko/RiderProjects/ServerDNP/Client/_Imports.razor"
+#line 4 "/Users/peter/RiderProjects/ServerDNP/Client/_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "/Users/peterblasko/RiderProjects/ServerDNP/Client/_Imports.razor"
+#line 5 "/Users/peter/RiderProjects/ServerDNP/Client/_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "/Users/peterblasko/RiderProjects/ServerDNP/Client/_Imports.razor"
+#line 6 "/Users/peter/RiderProjects/ServerDNP/Client/_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "/Users/peterblasko/RiderProjects/ServerDNP/Client/_Imports.razor"
+#line 7 "/Users/peter/RiderProjects/ServerDNP/Client/_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "/Users/peterblasko/RiderProjects/ServerDNP/Client/_Imports.razor"
+#line 8 "/Users/peter/RiderProjects/ServerDNP/Client/_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "/Users/peterblasko/RiderProjects/ServerDNP/Client/_Imports.razor"
+#line 9 "/Users/peter/RiderProjects/ServerDNP/Client/_Imports.razor"
 using Client;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "/Users/peterblasko/RiderProjects/ServerDNP/Client/_Imports.razor"
+#line 10 "/Users/peter/RiderProjects/ServerDNP/Client/_Imports.razor"
 using Client.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "/Users/peterblasko/RiderProjects/ServerDNP/Client/Pages/Login.razor"
+#line 2 "/Users/peter/RiderProjects/ServerDNP/Client/Pages/Login.razor"
 using Client.Login;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "/Users/peterblasko/RiderProjects/ServerDNP/Client/Pages/Login.razor"
+#line 3 "/Users/peter/RiderProjects/ServerDNP/Client/Pages/Login.razor"
 using FileData;
 
 #line default
@@ -105,7 +105,7 @@ using FileData;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 34 "/Users/peterblasko/RiderProjects/ServerDNP/Client/Pages/Login.razor"
+#line 34 "/Users/peter/RiderProjects/ServerDNP/Client/Pages/Login.razor"
        
     private string username;
     private string password;
