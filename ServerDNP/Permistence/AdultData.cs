@@ -10,35 +10,39 @@ namespace ServerDNP.Permistence
 {
     public class AdultData : IAdultData
     {
-        private DbCntxt dbCntxt;
-        public async Task<Adult> Add(Adult adult)
-        {
-            using DbCntxt dbCntxt = new DbCntxt();
-            EntityEntry<Adult> adultAdded = await dbCntxt.Adults.AddAsync(adult);
-            await dbCntxt.SaveChangesAsync();
-            return adultAdded.Entity;
-        }
+        private DbCntxt context;
 
+        public AdultData(DbCntxt context)
+        {
+            this.context = context;
+        }
         public async Task<IList<Adult>> GetAdults()
         {
-            using DbCntxt dbCntxt = new DbCntxt();
-            return await dbCntxt.Adults.ToListAsync();
+            return await context.Adults.ToListAsync();
         }
-        
+
+        public async Task<Adult> Add(Adult adult)
+        {
+            EntityEntry<Adult> newlyAdded = await context.Adults.AddAsync(adult);
+            await context.SaveChangesAsync();
+            return newlyAdded.Entity;
+        }
+
+       
+
         public async Task DeleteAdult(int adultId)
         {
-            using DbCntxt dbCntxt = new DbCntxt();
-            Adult toDelete = await dbCntxt.Adults.FirstOrDefaultAsync(t => t.Id == adultId);
+            Adult toDelete = await context.Adults.FirstOrDefaultAsync(t => t.Id == adultId);
             if (toDelete != null)
             {
-                dbCntxt.Adults.Remove(toDelete);
-                await dbCntxt.SaveChangesAsync();
+                context.Adults.Remove(toDelete);
+                await context.SaveChangesAsync();
             }
         }
+
         public Adult Get(int id)
         {
-            using DbCntxt dbCntxt = new DbCntxt();
-            return dbCntxt.Adults.FirstOrDefault(a => a.Id == id);
+            return context.Adults.FirstOrDefault(a => a.Id == id);
         }
     }
 }

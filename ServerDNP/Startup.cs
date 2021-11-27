@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using ServerDNP.DataAcces;
 using ServerDNP.Permistence;
 
 namespace ServerDNP
@@ -33,6 +34,7 @@ namespace ServerDNP
             {
                 c.SwaggerDoc("A1", new OpenApiInfo { Title = "ServerDNP", Version = "A1" });
             });
+            services.AddDbContext<DbCntxt>();
             services.AddScoped<IAdultData, AdultData>();
             services.AddScoped<IUserService, InMemoryUserService>();
         }

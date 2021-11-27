@@ -11,7 +11,7 @@ namespace ServerDNP.DataAcces
 
             protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
             {
-                optionsBuilder.UseSqlite("Data Source = Adults.db");
+                optionsBuilder.UseSqlite("Data Source = Adultt.db");
             }
 
         }
