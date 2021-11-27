@@ -7,11 +7,11 @@ namespace ServerDNP.Permistence
     public interface IAdultData
     {
         
-        Task RemoveAdult(Adult adult);
+        Task DeleteAdult(int adultId);
         Task<Adult> Add(Adult adult);
         
         Task<IList<Adult>> GetAdults();
 
-        Adult Get(int id);
+       Adult Get(int id);
     }
 }

@@ -3,11 +3,10 @@ using ServerDNP.Models;
 
 namespace ServerDNP.DataAcces
 {
-    public class DbCntxt
-    {
-        public class AdultDbContext : DbContext
+   
+    
+        public class DbCntxt  : DbContext
         {
-            public DbSet<Job> Jobs { get; set; }
             public DbSet<Adult> Adults { get; set; }
 
             protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -17,4 +16,3 @@ namespace ServerDNP.DataAcces
 
         }
     }
-}

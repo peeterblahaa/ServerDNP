@@ -31,9 +31,9 @@
     <div class="row" style="margin-left: 3px;">
         <div class="form-group"> Sex:<br/> <InputText placeholder="Enter sex" class="form-control" @bind-Value="newAdultItem.Sex"/> </div>
         <div class="row" style="margin-left: 50px;"></div>
-        <div class="form-group"> Job Title:<br/> <InputText placeholder="Enter job title" class="form-control" @bind-Value="newAdultItem.JobTitle.JobTitle"/> </div>
+        <div class="form-group"> Job Title:<br/> <InputText placeholder="Enter job title" class="form-control" @bind-Value="newJob.JobTitle"/> </div>
     </div>
-    <div class="form-group"> Salary:<br/> <InputNumber @bind-Value="newAdultItem.JobTitle.Salary"/> </div>
+    <div class="form-group"> Salary:<br/> <InputNumber @bind-Value="newJob.Salary"/> </div>
 
 
     <p class="actions">
@@ -41,30 +41,17 @@
     </p>
 </EditForm>
 
-@code {
 
+    @code {
+    private Adult newAdultItem = new Adult();
+    private Job newJob = new Job();
 
     private void AddNewAdult()
     {
+        newAdultItem.JobTitle = newJob;
         AdultData.Add(newAdultItem);
         NavigationManager.NavigateTo("/list");
     }
-
-    private readonly Adult newAdultItem = new()
-    {
-        Id = 0,
-        Age = 0,
-        Height = 0,
-        Sex = null,
-        Weight = 0,
-        EyeColor = null,
-        FirstName = null,
-        HairColor = null,
-        LastName = null, JobTitle = new Job
-        {
-            JobTitle = null,
-            Salary = 0
-        }
-    };
+    }
 
 }

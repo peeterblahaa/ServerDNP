@@ -30,19 +30,24 @@ namespace ServerDNP.Controllers
         }
 
         
+        
         [HttpDelete]
         [Route("{id:int}")]
-        public async Task<ActionResult> RemoveAdult([FromRoute] int id)
+
+        public async Task<ActionResult> DeleteAdult([FromRoute] int id)
         {
             try
             {
-                await adultData.RemoveAdult(adultData.Get(id));
+                await adultData.DeleteAdult(id);
                 return Ok();
-            } catch (Exception e)
+            }
+            catch (Exception e)
             {
+                Console.WriteLine(e);
                 return StatusCode(500, e.Message);
             }
         }
+        
         [HttpPost]
         public async Task<ActionResult<Adult>> AddAdult([FromBody] Adult adult)
         {
@@ -52,9 +57,11 @@ namespace ServerDNP.Controllers
                 return Created($"/{added.Id}", added);
             } catch (Exception e)
             {
+                Console.WriteLine(e);
                 return StatusCode(500, e.Message);
             }
         }
+        
         
     }
 }

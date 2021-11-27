@@ -17,11 +17,11 @@ namespace ServerDNP.Models
         public string HairColor { get; set; }
         [Required, MaxLength(20)]
         public string EyeColor { get; set; }
-        [Required, Range(1, int.MaxValue, ErrorMessage = "Enter a value greater than 0 for Age")]
+        [Required]
         public int Age { get; set; }
-        [Required, Range(1, int.MaxValue, ErrorMessage = "Enter a value bigger than 0 for Weight")]
+        [Required]
         public float Weight { get; set; }
-        [Required, Range(1, int.MaxValue, ErrorMessage = "Enter a value bigger than 0 for Height")]
+        [Required]
         public int Height { get; set; }
         [Required, MaxLength(20)]
         public string Sex { get; set; }
