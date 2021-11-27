@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zKZUxPNLlBvxrf5hVYPF7kKU4lIsevAx+hL8goGWASfugsZy2IkUyc9SfBFc/AkDrkT4Ohw57NMMrTLcwI20dA==",
+  "dgSpecHash": "2T6UVjz3qx3vZvTJAwnqg6ygNIAPseDZK8njX/SIbja+a0OFxDq/hxjIqW4MvwcL7p/WaIXdXhW2tuEm13S1yw==",
   "success": true,
-  "projectFilePath": "/Users/peterblasko/RiderProjects/ServerDNP/Entities/Entities.csproj",
+  "projectFilePath": "/Users/peter/RiderProjects/ServerDNP/Entities/Entities.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
