@@ -122,3 +122,5 @@
 /Users/peter/RiderProjects/ServerDNP/Client/obj/Debug/net5.0/ref/Client.dll
 /Users/peter/RiderProjects/ServerDNP/Client/obj/Debug/net5.0/Client.pdb
 /Users/peter/RiderProjects/ServerDNP/Client/obj/Debug/net5.0/Client.genruntimeconfig.cache
+/Users/peter/RiderProjects/ServerDNP/Client/bin/Debug/net5.0/Entities.dll
+/Users/peter/RiderProjects/ServerDNP/Client/bin/Debug/net5.0/Entities.pdb

@@ -1,0 +1,12 @@
+/Users/peter/RiderProjects/ServerDNP/Entities/bin/Debug/net5.0/Entities.deps.json
+/Users/peter/RiderProjects/ServerDNP/Entities/bin/Debug/net5.0/Entities.dll
+/Users/peter/RiderProjects/ServerDNP/Entities/bin/Debug/net5.0/ref/Entities.dll
+/Users/peter/RiderProjects/ServerDNP/Entities/bin/Debug/net5.0/Entities.pdb
+/Users/peter/RiderProjects/ServerDNP/Entities/obj/Debug/net5.0/Entities.csproj.AssemblyReference.cache
+/Users/peter/RiderProjects/ServerDNP/Entities/obj/Debug/net5.0/Entities.GeneratedMSBuildEditorConfig.editorconfig
+/Users/peter/RiderProjects/ServerDNP/Entities/obj/Debug/net5.0/Entities.AssemblyInfoInputs.cache
+/Users/peter/RiderProjects/ServerDNP/Entities/obj/Debug/net5.0/Entities.AssemblyInfo.cs
+/Users/peter/RiderProjects/ServerDNP/Entities/obj/Debug/net5.0/Entities.csproj.CoreCompileInputs.cache
+/Users/peter/RiderProjects/ServerDNP/Entities/obj/Debug/net5.0/Entities.dll
+/Users/peter/RiderProjects/ServerDNP/Entities/obj/Debug/net5.0/ref/Entities.dll
+/Users/peter/RiderProjects/ServerDNP/Entities/obj/Debug/net5.0/Entities.pdb

@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using ServerDNP.Models;
+using Entities;
+
 
 namespace ServerDNP.Permistence
 {

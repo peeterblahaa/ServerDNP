@@ -91,7 +91,7 @@ using Client.Data;
 #nullable disable
 #nullable restore
 #line 3 "/Users/peter/RiderProjects/ServerDNP/Client/Pages/AdultsList.razor"
-using Client.Models;
+using Entities;
 
 #line default
 #line hidden
@@ -105,7 +105,7 @@ using Client.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 96 "/Users/peter/RiderProjects/ServerDNP/Client/Pages/AdultsList.razor"
+#line 97 "/Users/peter/RiderProjects/ServerDNP/Client/Pages/AdultsList.razor"
        
 
 

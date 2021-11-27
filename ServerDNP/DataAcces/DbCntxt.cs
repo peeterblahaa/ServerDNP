@@ -1,5 +1,6 @@
+using Entities;
 using Microsoft.EntityFrameworkCore;
-using ServerDNP.Models;
+
 
 namespace ServerDNP.DataAcces
 {
@@ -9,6 +10,7 @@ namespace ServerDNP.DataAcces
         {
             public DbSet<Adult> Adults { get; set; }
             public DbSet<Job> Jobs { get; set; }
+            public DbSet<User> Users { get; set; }
             protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
             {
                 optionsBuilder.UseSqlite("Data Source = Adult.db");

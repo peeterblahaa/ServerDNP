@@ -1,8 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Entities;
 using Microsoft.AspNetCore.Mvc;
-using ServerDNP.Models;
+
 using ServerDNP.Permistence;
 
 namespace ServerDNP.Controllers

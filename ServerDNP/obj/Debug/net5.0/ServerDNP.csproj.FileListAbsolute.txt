@@ -86,3 +86,5 @@
 /Users/peter/RiderProjects/ServerDNP/ServerDNP/obj/Debug/net5.0/ref/ServerDNP.dll
 /Users/peter/RiderProjects/ServerDNP/ServerDNP/obj/Debug/net5.0/ServerDNP.pdb
 /Users/peter/RiderProjects/ServerDNP/ServerDNP/obj/Debug/net5.0/ServerDNP.genruntimeconfig.cache
+/Users/peter/RiderProjects/ServerDNP/ServerDNP/bin/Debug/net5.0/Entities.dll
+/Users/peter/RiderProjects/ServerDNP/ServerDNP/bin/Debug/net5.0/Entities.pdb

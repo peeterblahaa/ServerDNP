@@ -1,5 +1,6 @@
 using System.Threading.Tasks;
-using Client.Models;
+
+using Entities;
 
 namespace Client.Login
 {

@@ -2,7 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using ServerDNP.Models;
+using Entities;
+
 
 namespace ServerDNP.Permistence
 {

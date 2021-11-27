@@ -33,6 +33,7 @@
     ".NETCoreApp,Version=v5.0": {
       "ServerDNP/1.0.0": {
         "dependencies": {
+          "Entities": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.12",
           "Microsoft.EntityFrameworkCore.Design": "5.0.12",
           "Microsoft.EntityFrameworkCore.Sqlite": "5.0.12",
@@ -696,6 +697,14 @@
         }
       },
       "System.Memory/4.5.3": {},
+      "Entities/1.0.0": {
+        "runtime": {
+          "Entities.dll": {}
+        },
+        "compile": {
+          "Entities.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
         "compile": {
           "Microsoft.AspNetCore.Antiforgery.dll": {}
@@ -2634,6 +2643,11 @@
       "sha512": "sha512-3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
       "path": "system.memory/4.5.3",
       "hashPath": "system.memory.4.5.3.nupkg.sha512"
+    },
+    "Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
       "type": "referenceassembly",

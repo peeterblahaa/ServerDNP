@@ -4,7 +4,7 @@ using System.Security.Claims;
 using System.Text.Json;
 using System.Threading.Tasks;
 using Client.Login;
-using Client.Models;
+using Entities;
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.JSInterop;
 

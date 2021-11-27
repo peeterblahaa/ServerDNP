@@ -1,7 +1,8 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
-using ServerDNP.Models;
+using Entities;
+
 
 namespace ServerDNP.Permistence
 {

@@ -89,13 +89,6 @@ using Client.Login;
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "/Users/peter/RiderProjects/ServerDNP/Client/Pages/Register.razor"
-using Client.Models;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
 #line 4 "/Users/peter/RiderProjects/ServerDNP/Client/Pages/Register.razor"
 using Client.Login;
 
@@ -104,13 +97,20 @@ using Client.Login;
 #nullable disable
 #nullable restore
 #line 5 "/Users/peter/RiderProjects/ServerDNP/Client/Pages/Register.razor"
-using FileData;
+using Entities;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 6 "/Users/peter/RiderProjects/ServerDNP/Client/Pages/Register.razor"
+using FileData;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 7 "/Users/peter/RiderProjects/ServerDNP/Client/Pages/Register.razor"
 using Microsoft.AspNetCore.Components;
 
 #line default
@@ -125,7 +125,7 @@ using Microsoft.AspNetCore.Components;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 47 "/Users/peter/RiderProjects/ServerDNP/Client/Pages/Register.razor"
+#line 48 "/Users/peter/RiderProjects/ServerDNP/Client/Pages/Register.razor"
        
     private string errorMessage;
     private User newUser = new User();

@@ -1,10 +1,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using ServerDNP.DataAcces;
-using ServerDNP.Models;
+
 
 namespace ServerDNP.Permistence
 {

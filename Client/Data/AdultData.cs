@@ -3,7 +3,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
-using Client.Models;
+using Entities;
 using Newtonsoft.Json;
 
 namespace Client.Data

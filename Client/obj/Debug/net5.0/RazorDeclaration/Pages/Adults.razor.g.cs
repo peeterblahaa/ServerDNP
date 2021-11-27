@@ -90,13 +90,13 @@ using Client.Data;
 #nullable disable
 #nullable restore
 #line 3 "/Users/peter/RiderProjects/ServerDNP/Client/Pages/Adults.razor"
-using Client.Models;
+using Entities;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "/Users/peter/RiderProjects/ServerDNP/Client/Pages/Adults.razor"
+#line 5 "/Users/peter/RiderProjects/ServerDNP/Client/Pages/Adults.razor"
 using Microsoft.AspNetCore.Components;
 
 #line default
@@ -111,33 +111,18 @@ using Microsoft.AspNetCore.Components;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 44 "/Users/peter/RiderProjects/ServerDNP/Client/Pages/Adults.razor"
-       
-
+#line 46 "/Users/peter/RiderProjects/ServerDNP/Client/Pages/Adults.razor"
+           
+    private Adult newAdultItem = new Adult();
+    private Job newJob = new Job();
 
     private void AddNewAdult()
     {
+        newAdultItem.JobTitle = newJob;
         AdultData.Add(newAdultItem);
         NavigationManager.NavigateTo("/list");
     }
-
-    private readonly Adult newAdultItem = new()
-    {
-        Id = 0,
-        Age = 0,
-        Height = 0,
-        Sex = null,
-        Weight = 0,
-        EyeColor = null,
-        FirstName = null,
-        HairColor = null,
-        LastName = null, JobTitle = new Job
-        {
-            JobTitle = null,
-            Salary = 0
-        }
-    };
-
+    
 
 #line default
 #line hidden
