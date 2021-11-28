@@ -32,12 +32,12 @@ namespace ServerDNP.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<Adult>> AddAdult([FromBody] Adult adult)
+        public async Task<ActionResult> AddAdult([FromBody] Adult adult)
         {
             try
             {
-                Adult added = await adultsData.Add(adult);
-                return Created($"/{added.Id}", added);
+                await adultsData.Add(adult);
+                return Ok();
             }
             catch (Exception e)
             {

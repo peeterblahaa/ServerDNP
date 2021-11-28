@@ -9,7 +9,7 @@ namespace ServerDNP.Permistence
     {
         
         Task DeleteAdult(int adultId);
-        Task<Adult> Add(Adult adult);
+        Task Add(Adult adult);
         
         Task<IList<Adult>> GetAdults();
 

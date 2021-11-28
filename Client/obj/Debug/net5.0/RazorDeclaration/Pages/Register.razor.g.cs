@@ -125,7 +125,7 @@ using Microsoft.AspNetCore.Components;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 48 "/Users/peter/RiderProjects/ServerDNP/Client/Pages/Register.razor"
+#line 49 "/Users/peter/RiderProjects/ServerDNP/Client/Pages/Register.razor"
        
     private string errorMessage;
     private User newUser = new User();

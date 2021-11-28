@@ -11,38 +11,38 @@ namespace ServerDNP.Permistence
 {
     public class AdultData : IAdultData
     {
-        private DbCntxt context;
+        private DbCntxt dbcontext;
 
         public AdultData(DbCntxt context)
         {
-            this.context = context;
+            this.dbcontext = context;
         }
         public async Task<IList<Adult>> GetAdults()
         {
-            return await context.Adults.ToListAsync();
+            return await dbcontext.Adults.Include(a => a.JobTitle).ToListAsync();
         }
 
-        public async Task<Adult> Add(Adult adult)
+        public async Task Add(Adult adult)
         {
-            EntityEntry<Adult> newlyAdded = await context.Adults.AddAsync(adult);
-            await context.SaveChangesAsync();
-            return newlyAdded.Entity;
+            EntityEntry<Adult> newlyAdded = await dbcontext.Adults.AddAsync(adult);
+            await dbcontext.SaveChangesAsync();
+            
         }
 
         
         public async Task DeleteAdult(int adultId)
         {
-            Adult toDelete = await context.Adults.FirstOrDefaultAsync(t => t.Id == adultId);
+            Adult toDelete = await dbcontext.Adults.FirstOrDefaultAsync(t => t.Id == adultId);
             if (toDelete != null)
             {
-                context.Adults.Remove(toDelete);
-                await context.SaveChangesAsync();
+                dbcontext.Adults.Remove(toDelete);
+                await dbcontext.SaveChangesAsync();
             }
         }
 
         public Adult Get(int id)
         {
-            return context.Adults.FirstOrDefault(a => a.Id == id);
+            return dbcontext.Adults.FirstOrDefault(a => a.Id == id);
         }
     }
 }
