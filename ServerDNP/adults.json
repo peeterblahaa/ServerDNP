@@ -1,6 +1,7 @@
 [
   {
     "JobTitle": {
+      "JobID": 0,
       "JobTitle": "Business Development Manager",
       "Salary": 71456
     },
@@ -16,6 +17,7 @@
   },
   {
     "JobTitle": {
+      "JobID": 0,
       "JobTitle": "Skin Care Specialist",
       "Salary": 20545
     },
@@ -31,6 +33,7 @@
   },
   {
     "JobTitle": {
+      "JobID": 0,
       "JobTitle": "Vice Principal",
       "Salary": 72901
     },
@@ -46,6 +49,7 @@
   },
   {
     "JobTitle": {
+      "JobID": 0,
       "JobTitle": "Teacher",
       "Salary": 91588
     },
@@ -61,6 +65,7 @@
   },
   {
     "JobTitle": {
+      "JobID": 0,
       "JobTitle": "Service Advisor",
       "Salary": 72532
     },
@@ -76,6 +81,7 @@
   },
   {
     "JobTitle": {
+      "JobID": 0,
       "JobTitle": "Janitor",
       "Salary": 61437
     },
@@ -91,6 +97,7 @@
   },
   {
     "JobTitle": {
+      "JobID": 0,
       "JobTitle": "Office Clerk",
       "Salary": 41332
     },
@@ -106,6 +113,7 @@
   },
   {
     "JobTitle": {
+      "JobID": 0,
       "JobTitle": "Writer",
       "Salary": 63392
     },
@@ -121,6 +129,7 @@
   },
   {
     "JobTitle": {
+      "JobID": 0,
       "JobTitle": "Casino Host",
       "Salary": 35445
     },
@@ -136,6 +145,7 @@
   },
   {
     "JobTitle": {
+      "JobID": 0,
       "JobTitle": "Nurse",
       "Salary": 36813
     },
@@ -151,6 +161,7 @@
   },
   {
     "JobTitle": {
+      "JobID": 0,
       "JobTitle": "Web Administrator",
       "Salary": 44759
     },
@@ -166,6 +177,7 @@
   },
   {
     "JobTitle": {
+      "JobID": 0,
       "JobTitle": "Science Teacher",
       "Salary": 55346
     },
@@ -181,6 +193,7 @@
   },
   {
     "JobTitle": {
+      "JobID": 0,
       "JobTitle": "Call Center Agent",
       "Salary": 20308
     },

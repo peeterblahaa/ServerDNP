@@ -35,7 +35,7 @@ namespace ServerDNP.Controllers
         {
             try
             {
-                userService.ValidateUser(user.Username, user.Password);
+                
                 User added = await userService.Add(user);
                 return Created($"/{added.Username}", added);
             }

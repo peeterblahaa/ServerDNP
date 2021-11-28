@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Entities;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
+using ServerDNP.DataAcces;
 
 
 namespace ServerDNP.Permistence
@@ -10,17 +13,16 @@ namespace ServerDNP.Permistence
     public class InMemoryUserService : IUserService
     {
         public IList<User> Users { get; private set; }
-        private readonly FileContext fileContext;
+        private DbCntxt contex;
 
-        public InMemoryUserService()
+        public InMemoryUserService(DbCntxt cont)
         {
-            fileContext = new FileContext();
-            Users = fileContext.Users;
+            this.contex = cont;
         }
 
         public async Task<IList<User>> GetUsers()
         {
-            return Users;
+            return await contex.Users.ToListAsync();
         }
 
         public User ValidateUser(string username, string password)
@@ -31,22 +33,13 @@ namespace ServerDNP.Permistence
             if (first != null) throw new Exception("User already exists");
             return first;
         }
-
-        public void SaveChanges()
-        {
-            fileContext.SaveChanges();
-        }
+        
 
         public async Task<User> Add(User user)
         {
-            await Task.Run(() =>
-            {
-                user.IsRegistered = true;
-                Users.Add(user);
-                SaveChanges();
-            });
-
-            return user;
+            EntityEntry<User> newUser = await contex.Users.AddAsync(user);
+            await contex.SaveChangesAsync();
+            return newUser.Entity;
         }
     }
 }

@@ -61,6 +61,7 @@ else
             <th>Height</th>
             <th>Sex</th>
             <th>Job Title</th>
+            <th>Salary</th>
             <th>Remove</th>
         </tr>
         </thead>
@@ -78,8 +79,7 @@ else
                 <td>@item.Height</td>
                 <td>@item.Sex</td>
                 <td>@(item.JobTitle== null? "unemployed" : item.JobTitle.JobTitle )</td>
-              
-
+                <td>@(item.JobTitle== null? "Unidentified" : item.JobTitle.Salary )</td>
                 <td>
                     <button @onclick="@(() => RemoveAdult(item.Id))">
                         <i class="oi oi-trash" style="color:red"/>
