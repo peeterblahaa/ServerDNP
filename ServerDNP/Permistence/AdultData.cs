@@ -29,8 +29,7 @@ namespace ServerDNP.Permistence
             return newlyAdded.Entity;
         }
 
-       
-
+        
         public async Task DeleteAdult(int adultId)
         {
             Adult toDelete = await context.Adults.FirstOrDefaultAsync(t => t.Id == adultId);
